@@ -1,0 +1,13 @@
+Component,Conservative,Base_Case,Aggressive
+Risk Free Rate (%),6.5,6.5,6.5
+Market Risk Premium (%),6.0,6.5,7.0
+Beta (IT Sector Avg),0.8,1.0,1.2
+Cost of Equity (%),11.3,12.0,13.9
+Cost of Debt (%),7.5,8.0,8.5
+Tax Rate (%),25.0,25.0,25.0
+Terminal Growth Rate (%),3.0,3.5,4.0
+WACC (IT Sector Avg) (%),10.8,11.2,12.5
+EV/EBITDA Multiple,11.5,12.5,14.0
+P/E Multiple (IT Sector),22.0,25.0,28.0
+P/B Multiple (IT Sector),6.5,7.8,9.2
+Revenue CAGR (5Y) (%),8.0,12.0,16.0

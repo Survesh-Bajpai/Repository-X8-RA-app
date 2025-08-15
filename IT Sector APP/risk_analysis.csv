@@ -1,0 +1,11 @@
+Risk_Factor,Impact_Level,Probability,Risk_Score,Trend
+Currency Risk (USD-INR),3.5,0.7,2.45,Increasing
+Regulatory Changes,2.8,0.6,1.68,Stable
+Competition Intensity,4.2,0.9,3.78,Increasing
+Technology Disruption (AI/Automation),4.5,0.8,3.6,Increasing
+Client Concentration Risk,3.2,0.5,1.6,Stable
+Talent Availability,3.8,0.7,2.66,Increasing
+Geopolitical Tensions,3.0,0.4,1.2,Increasing
+Economic Slowdown (US/Europe),3.7,0.6,2.22,Stable
+Digital Transformation Demand,2.2,0.9,1.98,Decreasing
+Cloud Migration Opportunity,1.8,0.9,1.62,Decreasing

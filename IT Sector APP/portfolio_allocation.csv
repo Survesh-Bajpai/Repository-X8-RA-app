@@ -1,0 +1,7 @@
+Investment_Style,TCS_%,INFY_%,HCLTECH_%,WIPRO_%,LTIM_%,TECHM_%,Expected_Return_%,Risk_Level
+Conservative,40,25,15,10,5,5,12,Low
+Balanced,35,25,15,15,5,5,15,Medium
+Aggressive,30,20,15,20,10,5,20,High
+Value,45,30,15,10,0,0,14,Low
+Growth,25,20,15,15,15,10,22,High
+Dividend,35,25,20,15,0,5,10,Low

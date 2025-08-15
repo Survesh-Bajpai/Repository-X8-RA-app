@@ -1,0 +1,7 @@
+Company,Company_Name,Current_Price,DCF_Target_Price,Peer_Valuation_Score,Analyst_Consensus,DCF_Recommendation,Peer_Recommendation,Final_Rating,Target_Price,Upside_Potential_%,Risk_Rating,Investment_Horizon
+TCS,Tata Consultancy Services,3022.3,5348.43,1.28,Strong Buy,Strong Buy,Strong Buy,Strong Buy,5200,72.1,Low,Long Term
+INFY,Infosys,1447.7,1395.96,1.21,Buy,Hold,Strong Buy,Buy,1650,14.0,Low,Long Term
+HCLTECH,HCL Technologies,1489.8,1564.36,1.12,Buy,Hold,Buy,Buy,1720,15.4,Medium,Medium Term
+WIPRO,Wipro,246.81,370.87,1.22,Buy,Strong Buy,Strong Buy,Strong Buy,385,56.0,Medium,Medium Term
+LTIM,LTIMindtree,5108.0,4119.89,0.97,Hold,Sell,Hold,Hold,4500,-11.9,Medium,Short Term
+TECHM,Tech Mahindra,1486.7,1014.04,0.8,Sell,Strong Sell,Sell,Sell,1200,-19.3,High,Avoid

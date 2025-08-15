@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Sector Research Analysis - SEBI RA Survesh Bajpai</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <!-- Header Navigation -->
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="brand">
+                        <h1>IT Sector Research Analysis</h1>
+                        <p>SEBI Registered Research Analyst - Survesh Bajpai</p>
+                    </div>
+                    <div class="header-actions">
+                        <button id="themeToggle" class="btn btn--secondary">🌓 Theme</button>
+                        <button id="exportBtn" class="btn btn--primary">📊 Export Report</button>
+                    </div>
+                </div>
+                
+                <nav class="nav">
+                    <button class="nav-btn active" data-section="executive-summary">Executive Summary</button>
+                    <button class="nav-btn" data-section="macro-analysis">Macro Analysis</button>
+                    <button class="nav-btn" data-section="industry-analysis">Industry Analysis</button>
+                    <button class="nav-btn" data-section="company-analysis">Company Analysis</button>
+                    <button class="nav-btn" data-section="valuation-analysis">DCF & Valuation</button>
+                    <button class="nav-btn" data-section="recommendations">Recommendations</button>
+                    <button class="nav-btn" data-section="methodology">Methodology</button>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <!-- Executive Summary Section -->
+            <section id="executive-summary" class="section active">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Executive Summary Dashboard</h2>
+                        <p class="section-desc">Key sector metrics and headline recommendations for Indian IT industry analysis</p>
+                    </div>
+
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-icon">🏢</div>
+                            <div class="metric-content">
+                                <h3>Total Market Cap</h3>
+                                <div class="metric-value">₹32.2 Lakh Cr</div>
+                                <div class="metric-change positive">+12.5% YoY</div>
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon">📈</div>
+                            <div class="metric-content">
+                                <h3>Companies Analyzed</h3>
+                                <div class="metric-value">34</div>
+                                <div class="metric-change">NIFTY 500 IT</div>
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon">🌍</div>
+                            <div class="metric-content">
+                                <h3>IT Export Revenue</h3>
+                                <div class="metric-value">$194 Bn</div>
+                                <div class="metric-change positive">+9.6% YoY</div>
+                            </div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-icon">🇮🇳</div>
+                            <div class="metric-content">
+                                <h3>GDP Contribution</h3>
+                                <div class="metric-value">7.5%</div>
+                                <div class="metric-change positive">+0.3% pts</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-grid">
+                        <div class="dashboard-panel">
+                            <div class="panel-header">
+                                <h3>Market Cap Distribution</h3>
+                                <span class="panel-subtitle">NIFTY 500 IT Companies</span>
+                            </div>
+                            <div class="chart-container">
+                                <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/8ecfbe7b820dbf7239c4753788929e35/6ef02ca3-9aad-4e41-bf89-15693b43d61d/d38187ac.png" alt="Market Cap Treemap" class="chart-image">
+                            </div>
+                        </div>
+
+                        <div class="dashboard-panel">
+                            <div class="panel-header">
+                                <h3>Top Investment Recommendations</h3>
+                                <span class="panel-subtitle">Based on DCF & Peer Analysis</span>
+                            </div>
+                            <div class="recommendations-list">
+                                <div class="recommendation-item strong-buy">
+                                    <div class="rec-company">
+                                        <span class="rec-name">TCS</span>
+                                        <span class="rec-price">₹3,022</span>
+                                    </div>
+                                    <div class="rec-details">
+                                        <span class="rec-rating">Strong Buy</span>
+                                        <span class="rec-upside">+72.1%</span>
+                                    </div>
+                                </div>
+                                <div class="recommendation-item strong-buy">
+                                    <div class="rec-company">
+                                        <span class="rec-name">WIPRO</span>
+                                        <span class="rec-price">₹247</span>
+                                    </div>
+                                    <div class="rec-details">
+                                        <span class="rec-rating">Strong Buy</span>
+                                        <span class="rec-upside">+56.0%</span>
+                                    </div>
+                                </div>
+                                <div class="recommendation-item buy">
+                                    <div class="rec-company">
+                                        <span class="rec-name">INFY</span>
+                                        <span class="rec-price">₹1,448</span>
+                                    </div>
+                                    <div class="rec-details">
+                                        <span class="rec-rating">Buy</span>
+                                        <span class="rec-upside">+14.0%</span>
+                                    </div>
+                                </div>
+                                <div class="recommendation-item buy">
+                                    <div class="rec-company">
+                                        <span class="rec-name">HCLTECH</span>
+                                        <span class="rec-price">₹1,490</span>
+                                    </div>
+                                    <div class="rec-details">
+                                        <span class="rec-rating">Buy</span>
+                                        <span class="rec-upside">+15.4%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-panel full-width">
+                            <div class="panel-header">
+                                <h3>Economic Indicators Summary</h3>
+                                <span class="panel-subtitle">Key macroeconomic trends affecting IT sector</span>
+                            </div>
+                            <div class="indicators-grid">
+                                <div class="indicator">
+                                    <div class="indicator-label">GDP Growth Rate</div>
+                                    <div class="indicator-value">6.5%</div>
+                                    <div class="indicator-trend negative">↓ from 7.4%</div>
+                                </div>
+                                <div class="indicator">
+                                    <div class="indicator-label">Inflation Rate</div>
+                                    <div class="indicator-value">2.82%</div>
+                                    <div class="indicator-trend positive">↓ from 3.65%</div>
+                                </div>
+                                <div class="indicator">
+                                    <div class="indicator-label">IT Export Revenue</div>
+                                    <div class="indicator-value">$194 Bn</div>
+                                    <div class="indicator-trend positive">↑ from $177 Bn</div>
+                                </div>
+                                <div class="indicator">
+                                    <div class="indicator-label">IT GDP Contribution</div>
+                                    <div class="indicator-value">7.5%</div>
+                                    <div class="indicator-trend positive">↑ from 7.2%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Macro Analysis Section -->
+            <section id="macro-analysis" class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Macroeconomic Analysis (EIC Framework)</h2>
+                        <p class="section-desc">Economy-Industry-Company framework analysis for comprehensive market understanding</p>
+                    </div>
+
+                    <div class="analysis-grid">
+                        <div class="analysis-panel">
+                            <div class="panel-header">
+                                <h3>Economic Trends Analysis</h3>
+                                <span class="panel-subtitle">Key macroeconomic indicators impacting IT sector</span>
+                            </div>
+                            <div class="chart-container">
+                                <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/8ecfbe7b820dbf7239c4753788929e35/78aff3f1-239f-4498-8d4e-34c0881d938a/439a8cc4.png" alt="Economic Analysis" class="chart-image">
+                            </div>
+                        </div>
+
+                        <div class="analysis-panel">
+                            <div class="panel-header">
+                                <h3>Global IT Spending vs India Position</h3>
+                                <span class="panel-subtitle">Market share and competitive positioning</span>
+                            </div>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="globalSpendingChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="economic-insights">
+                        <div class="insight-card">
+                            <h4>🌍 Global Economic Environment</h4>
+                            <ul>
+                                <li>Global IT spending expected to reach $5.1 trillion by 2025, growing at 8.2% CAGR</li>
+                                <li>Digital transformation acceleration post-pandemic driving demand</li>
+                                <li>Geopolitical tensions creating near-shoring opportunities for India</li>
+                                <li>Rising interest rates in developed markets affecting client budgets</li>
+                            </ul>
+                        </div>
+                        <div class="insight-card">
+                            <h4>🇮🇳 Indian Economic Context</h4>
+                            <ul>
+                                <li>GDP growth moderating to 6.5% but remains robust among major economies</li>
+                                <li>Inflation cooling to 2.82%, providing monetary policy flexibility</li>
+                                <li>Rupee volatility remains a key risk for IT exporters</li>
+                                <li>Government's Digital India initiatives boosting domestic demand</li>
+                            </ul>
+                        </div>
+                        <div class="insight-card">
+                            <h4>📊 IT Sector Outlook</h4>
+                            <ul>
+                                <li>IT export revenue growth of 9.6% YoY to $194 billion</li>
+                                <li>Sector contributing 7.5% to India's GDP, up from 7.2%</li>
+                                <li>Employment in IT sector reaches 4.8 million professionals</li>
+                                <li>Strong pipeline in cloud, AI/ML, and cybersecurity services</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Industry Analysis Section -->
+            <section id="industry-analysis" class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Industry Analysis</h2>
+                        <p class="section-desc">Comprehensive industry structure and competitive dynamics analysis</p>
+                    </div>
+
+                    <div class="industry-grid">
+                        <div class="industry-panel">
+                            <div class="panel-header">
+                                <h3>Porter's Five Forces Analysis</h3>
+                                <span class="panel-subtitle">Competitive intensity assessment</span>
+                            </div>
+                            <div class="chart-container">
+                                <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/8ecfbe7b820dbf7239c4753788929e35/8edb24c7-c427-4715-8e9a-a60ed2a4d928/0f80a423.png" alt="Porter's Five Forces" class="chart-image">
+                            </div>
+                            <div class="forces-summary">
+                                <div class="force-item">
+                                    <span class="force-name">Competitive Rivalry</span>
+                                    <span class="force-score high">4.5/5 - High</span>
+                                </div>
+                                <div class="force-item">
+                                    <span class="force-name">Threat of Substitutes</span>
+                                    <span class="force-score high">4.0/5 - High</span>
+                                </div>
+                                <div class="force-item">
+                                    <span class="force-name">Buyer Power</span>
+                                    <span class="force-score medium">3.5/5 - Medium-High</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="industry-panel">
+                            <div class="panel-header">
+                                <h3>Market Segmentation Analysis</h3>
+                                <span class="panel-subtitle">Revenue distribution by industry verticals</span>
+                            </div>
+                            <div class="chart-container" style="position: relative; height: 350px;">
+                                <canvas id="marketSegmentChart"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="industry-panel full-width">
+                            <div class="panel-header">
+                                <h3>Risk Factor Analysis Matrix</h3>
+                                <span class="panel-subtitle">Impact vs Probability assessment of key industry risks</span>
+                            </div>
+                            <div class="chart-container">
+                                <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/8ecfbe7b820dbf7239c4753788929e35/5990d5d1-bc17-43e6-a710-3fc13bb1febd/a2ba798e.png" alt="Risk Analysis" class="chart-image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="industry-insights">
+                        <div class="insight-section">
+                            <h4>🎯 Key Growth Drivers</h4>
+                            <div class="driver-list">
+                                <div class="driver-item">
+                                    <span class="driver-icon">☁️</span>
+                                    <div class="driver-content">
+                                        <strong>Cloud Transformation</strong>
+                                        <p>Enterprise cloud migration driving 25-30% growth in cloud services revenue</p>
+                                    </div>
+                                </div>
+                                <div class="driver-item">
+                                    <span class="driver-icon">🤖</span>
+                                    <div class="driver-content">
+                                        <strong>AI & Automation</strong>
+                                        <p>AI/ML capabilities becoming key differentiator, GenAI creating new service lines</p>
+                                    </div>
+                                </div>
+                                <div class="driver-item">
+                                    <span class="driver-icon">🔒</span>
+                                    <div class="driver-content">
+                                        <strong>Cybersecurity</strong>
+                                        <p>Rising cyber threats driving 20%+ growth in security services demand</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="insight-section">
+                            <h4>⚠️ Key Challenges</h4>
+                            <div class="challenge-list">
+                                <div class="challenge-item high">
+                                    <strong>Talent Shortage:</strong> Critical skills gap in emerging technologies
+                                </div>
+                                <div class="challenge-item medium">
+                                    <strong>Margin Pressure:</strong> Increasing competition and client cost optimization
+                                </div>
+                                <div class="challenge-item medium">
+                                    <strong>Currency Risk:</strong> USD-INR volatility impacting revenue predictability
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Company Analysis Section -->
+            <section id="company-analysis" class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Company Analysis</h2>
+                        <p class="section-desc">Comprehensive analysis of NIFTY 500 IT companies with detailed metrics and peer comparison</p>
+                    </div>
+
+                    <div class="filter-controls">
+                        <div class="filter-group">
+                            <label for="capFilter" class="filter-label">Market Cap:</label>
+                            <select id="capFilter" class="form-control filter-select">
+                                <option value="all">All Categories</option>
+                                <option value="large">Large Cap (>₹20,000 Cr)</option>
+                                <option value="mid">Mid Cap (₹5,000-₹20,000 Cr)</option>
+                                <option value="small">Small Cap (<₹5,000 Cr)</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="recFilter" class="filter-label">Recommendation:</label>
+                            <select id="recFilter" class="form-control filter-select">
+                                <option value="all">All Recommendations</option>
+                                <option value="Strong Buy">Strong Buy</option>
+                                <option value="Buy">Buy</option>
+                                <option value="Hold">Hold</option>
+                                <option value="Sell">Sell</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="sortBy" class="filter-label">Sort By:</label>
+                            <select id="sortBy" class="form-control filter-select">
+                                <option value="mcap">Market Cap</option>
+                                <option value="upside">Upside Potential</option>
+                                <option value="pe">PE Ratio</option>
+                                <option value="roe">ROE</option>
+                                <option value="growth">Revenue Growth</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="companiesGrid" class="companies-grid">
+                        <!-- Companies will be populated by JavaScript -->
+                    </div>
+
+                    <div class="peer-analysis">
+                        <div class="panel-header">
+                            <h3>Peer Valuation Analysis</h3>
+                            <span class="panel-subtitle">PE vs ROE comparison with market cap and recommendations</span>
+                        </div>
+                        <div class="chart-container">
+                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/8ecfbe7b820dbf7239c4753788929e35/67b6d7bb-37dc-4f6b-91dd-02db71714b0f/31832968.png" alt="Peer Valuation Analysis" class="chart-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DCF & Valuation Analysis Section -->
+            <section id="valuation-analysis" class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>DCF & Valuation Analysis</h2>
+                        <p class="section-desc">Intrinsic value estimation using DCF methodology across multiple scenarios</p>
+                    </div>
+
+                    <div class="valuation-grid">
+                        <div class="valuation-panel">
+                            <div class="panel-header">
+                                <h3>DCF Scenario Analysis</h3>
+                                <span class="panel-subtitle">Conservative, Base Case & Aggressive scenarios</span>
+                            </div>
+                            <div class="chart-container">
+                                <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/8ecfbe7b820dbf7239c4753788929e35/76138215-4651-4958-bfd5-67e6daf8b2cb/a9fe4988.png" alt="DCF Analysis" class="chart-image">
+                            </div>
+                        </div>
+
+                        <div class="valuation-panel">
+                            <div class="panel-header">
+                                <h3>Target Price vs Current Price</h3>
+                                <span class="panel-subtitle">Upside/downside potential analysis</span>
+                            </div>
+                            <div class="chart-container" style="position: relative; height: 350px;">
+                                <canvas id="targetPriceChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dcf-assumptions">
+                        <h3>Key DCF Model Assumptions</h3>
+                        <div class="assumptions-grid">
+                            <div class="assumption-card">
+                                <h4>Revenue Growth</h4>
+                                <div class="assumption-scenarios">
+                                    <div class="scenario">Conservative: 8-12%</div>
+                                    <div class="scenario">Base Case: 12-16%</div>
+                                    <div class="scenario">Aggressive: 16-20%</div>
+                                </div>
+                            </div>
+                            <div class="assumption-card">
+                                <h4>EBITDA Margin</h4>
+                                <div class="assumption-scenarios">
+                                    <div class="scenario">Conservative: 18-22%</div>
+                                    <div class="scenario">Base Case: 22-25%</div>
+                                    <div class="scenario">Aggressive: 25-28%</div>
+                                </div>
+                            </div>
+                            <div class="assumption-card">
+                                <h4>Terminal Growth</h4>
+                                <div class="assumption-scenarios">
+                                    <div class="scenario">Conservative: 3.0%</div>
+                                    <div class="scenario">Base Case: 3.5%</div>
+                                    <div class="scenario">Aggressive: 4.0%</div>
+                                </div>
+                            </div>
+                            <div class="assumption-card">
+                                <h4>WACC Range</h4>
+                                <div class="assumption-scenarios">
+                                    <div class="scenario">Conservative: 12-14%</div>
+                                    <div class="scenario">Base Case: 10-12%</div>
+                                    <div class="scenario">Aggressive: 8-10%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="valuation-summary">
+                        <h3>Intrinsic Value Summary</h3>
+                        <div class="valuation-table-container">
+                            <table class="valuation-table">
+                                <thead>
+                                    <tr>
+                                        <th>Company</th>
+                                        <th>Current Price</th>
+                                        <th>Conservative IV</th>
+                                        <th>Base Case IV</th>
+                                        <th>Aggressive IV</th>
+                                        <th>Target Price</th>
+                                        <th>Upside Potential</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="valuationTableBody">
+                                    <!-- Data will be populated by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Investment Recommendations Section -->
+            <section id="recommendations" class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Investment Recommendations</h2>
+                        <p class="section-desc">Final investment recommendations with portfolio allocation and risk-return analysis</p>
+                    </div>
+
+                    <div class="recommendations-grid">
+                        <div class="recommendations-panel">
+                            <div class="panel-header">
+                                <h3>Final Investment Recommendations</h3>
+                                <span class="panel-subtitle">Based on comprehensive analysis</span>
+                            </div>
+                            <div class="chart-container">
+                                <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/8ecfbe7b820dbf7239c4753788929e35/de99e730-3917-487b-a735-4072e51a28d5/ef299afa.png" alt="Investment Recommendations" class="chart-image">
+                            </div>
+                        </div>
+
+                        <div class="recommendations-panel">
+                            <div class="panel-header">
+                                <h3>Portfolio Allocation</h3>
+                                <span class="panel-subtitle">Suggested allocation across IT companies</span>
+                            </div>
+                            <div class="chart-container" style="position: relative; height: 350px;">
+                                <canvas id="portfolioChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="final-recommendations">
+                        <h3>Detailed Recommendations Summary</h3>
+                        <div id="recommendationsTable" class="recommendations-table-container">
+                            <!-- Table will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="investment-strategies">
+                        <h3>Investment Strategy Recommendations</h3>
+                        <div class="strategy-grid">
+                            <div class="strategy-card conservative">
+                                <h4>🛡️ Conservative Strategy</h4>
+                                <div class="strategy-allocation">
+                                    <div class="allocation-item">
+                                        <span>Large Cap Leaders</span>
+                                        <span>70%</span>
+                                    </div>
+                                    <div class="allocation-item">
+                                        <span>Dividend Paying</span>
+                                        <span>20%</span>
+                                    </div>
+                                    <div class="allocation-item">
+                                        <span>Cash/Others</span>
+                                        <span>10%</span>
+                                    </div>
+                                </div>
+                                <p>Focus on TCS, Infosys for stable returns with lower volatility</p>
+                            </div>
+                            <div class="strategy-card balanced">
+                                <h4>⚖️ Balanced Strategy</h4>
+                                <div class="strategy-allocation">
+                                    <div class="allocation-item">
+                                        <span>Large Cap</span>
+                                        <span>50%</span>
+                                    </div>
+                                    <div class="allocation-item">
+                                        <span>Mid Cap Growth</span>
+                                        <span>35%</span>
+                                    </div>
+                                    <div class="allocation-item">
+                                        <span>Small Cap</span>
+                                        <span>15%</span>
+                                    </div>
+                                </div>
+                                <p>Mix of stability and growth with selective mid-cap exposure</p>
+                            </div>
+                            <div class="strategy-card aggressive">
+                                <h4>🚀 Growth Strategy</h4>
+                                <div class="strategy-allocation">
+                                    <div class="allocation-item">
+                                        <span>High Growth Large Cap</span>
+                                        <span>40%</span>
+                                    </div>
+                                    <div class="allocation-item">
+                                        <span>Mid Cap Leaders</span>
+                                        <span>40%</span>
+                                    </div>
+                                    <div class="allocation-item">
+                                        <span>Emerging Players</span>
+                                        <span>20%</span>
+                                    </div>
+                                </div>
+                                <p>Maximum growth potential with higher risk tolerance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Research Methodology Section -->
+            <section id="methodology" class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Research Methodology</h2>
+                        <p class="section-desc">Comprehensive methodology, assumptions, and SEBI compliance disclosures</p>
+                    </div>
+
+                    <div class="methodology-content">
+                        <div class="method-section">
+                            <h3>📊 DCF Valuation Methodology</h3>
+                            <div class="method-details">
+                                <h4>Free Cash Flow Projection</h4>
+                                <ul>
+                                    <li><strong>Revenue Growth:</strong> Based on historical trends, management guidance, and industry growth rates</li>
+                                    <li><strong>Operating Margins:</strong> Analyzed considering automation benefits, wage inflation, and pricing pressure</li>
+                                    <li><strong>Tax Rate:</strong> Effective tax rate considering global operations and tax optimization strategies</li>
+                                    <li><strong>CAPEX:</strong> Asset-light model with focus on technology infrastructure investments</li>
+                                </ul>
+                                <h4>Terminal Value Calculation</h4>
+                                <ul>
+                                    <li><strong>Terminal Growth Rate:</strong> 3.0% to 4.0% based on long-term GDP growth expectations</li>
+                                    <li><strong>Exit Multiple:</strong> Cross-verified with EV/EBITDA multiples of mature IT companies</li>
+                                </ul>
+                                <h4>Discount Rate (WACC)</h4>
+                                <ul>
+                                    <li><strong>Risk-free Rate:</strong> 10-year G-Sec yield (7.1%)</li>
+                                    <li><strong>Equity Risk Premium:</strong> 6.5% for Indian markets</li>
+                                    <li><strong>Beta:</strong> Company-specific beta based on 2-year daily returns</li>
+                                    <li><strong>Cost of Debt:</strong> Based on current borrowing rates and credit profile</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="method-section">
+                            <h3>📈 Relative Valuation Framework</h3>
+                            <div class="method-details">
+                                <h4>Peer Group Selection</h4>
+                                <ul>
+                                    <li>NIFTY 500 IT universe for comprehensive coverage</li>
+                                    <li>Business model similarity and revenue size considerations</li>
+                                    <li>Geographic exposure and client concentration analysis</li>
+                                </ul>
+                                <h4>Valuation Multiples</h4>
+                                <ul>
+                                    <li><strong>P/E Ratio:</strong> Forward PE based on consensus earnings estimates</li>
+                                    <li><strong>EV/EBITDA:</strong> Enterprise value to EBITDA multiple</li>
+                                    <li><strong>Price/Book:</strong> For asset-intensive business segments</li>
+                                    <li><strong>EV/Sales:</strong> For growth companies with limited profitability</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="method-section">
+                            <h3>⚖️ Risk Assessment Framework</h3>
+                            <div class="method-details">
+                                <h4>Quantitative Risk Metrics</h4>
+                                <ul>
+                                    <li><strong>Beta Analysis:</strong> Systematic risk relative to market</li>
+                                    <li><strong>Volatility:</strong> Standard deviation of returns over 2-year period</li>
+                                    <li><strong>Correlation:</strong> Portfolio diversification benefits analysis</li>
+                                    <li><strong>VaR:</strong> Value at Risk calculations for downside protection</li>
+                                </ul>
+                                <h4>Qualitative Risk Factors</h4>
+                                <ul>
+                                    <li>Client concentration and geographic revenue mix</li>
+                                    <li>Technology disruption and obsolescence risks</li>
+                                    <li>Currency exposure and hedging strategies</li>
+                                    <li>Regulatory and compliance risks</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="disclaimer-section">
+                            <h3>⚠️ SEBI Compliance & Disclaimers</h3>
+                            <div class="disclaimer-content">
+                                <div class="analyst-info">
+                                    <h4>Research Analyst Information</h4>
+                                    <ul>
+                                        <li><strong>Name:</strong> Survesh Bajpai</li>
+                                        <li><strong>Qualification:</strong> MBA-Finance IIMB, MSc Quantitative Finance (World Quant University)</li>
+                                        <li><strong>Certifications:</strong> NISM PGP RA/IA/PMS, CMT Level 2, CFA Level 2</li>
+                                        <li><strong>SEBI Registration:</strong> INH000000XXX (Sample Registration Number)</li>
+                                        <li><strong>Contact:</strong> research@example.com</li>
+                                    </ul>
+                                </div>
+                                <div class="disclaimers">
+                                    <h4>Key Disclaimers</h4>
+                                    <ul>
+                                        <li>This report has been prepared by SEBI registered Research Analyst</li>
+                                        <li>The analyst and his family members do not have any material conflict of interest</li>
+                                        <li>The analyst has not served as an officer, director or employee of the subject companies</li>
+                                        <li>The analyst has not received any compensation from the subject companies in the past 12 months</li>
+                                        <li>The research analyst has not managed or co-managed public offering of securities for subject companies</li>
+                                        <li>Past performance may or may not be sustained in future</li>
+                                        <li>Investment in securities market are subject to market risks, read all related documents carefully</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="data-sources">
+                            <h3>📚 Data Sources & References</h3>
+                            <div class="sources-grid">
+                                <div class="source-category">
+                                    <h4>Financial Data</h4>
+                                    <ul>
+                                        <li>BSE & NSE official filings</li>
+                                        <li>Annual Reports & Investor Presentations</li>
+                                        <li>Bloomberg Terminal</li>
+                                        <li>Reuters Eikon</li>
+                                    </ul>
+                                </div>
+                                <div class="source-category">
+                                    <h4>Economic Data</h4>
+                                    <ul>
+                                        <li>Reserve Bank of India</li>
+                                        <li>Ministry of Statistics & PI</li>
+                                        <li>NASSCOM Industry Reports</li>
+                                        <li>IMF & World Bank</li>
+                                    </ul>
+                                </div>
+                                <div class="source-category">
+                                    <h4>Industry Research</h4>
+                                    <ul>
+                                        <li>Gartner IT Spending Reports</li>
+                                        <li>IDC Technology Forecasts</li>
+                                        <li>McKinsey Global Institute</li>
+                                        <li>Deloitte Industry Analysis</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <p><strong>SEBI Registered Research Analyst:</strong> Survesh Bajpai | <strong>Registration:</strong> INH000000XXX</p>
+                        <p><strong>Report Date:</strong> August 16, 2025 | <strong>Next Review:</strong> November 16, 2025</p>
+                    </div>
+                    <div class="footer-disclaimer">
+                        <p><em>This research report has been published by a SEBI registered Research Analyst. Please read all disclaimers and risk factors before making investment decisions.</em></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

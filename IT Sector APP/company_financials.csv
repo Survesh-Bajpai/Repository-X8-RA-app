@@ -1,0 +1,7 @@
+Company,Company_Name,Revenue_TTM_Cr,EBITDA_Margin_%,Free_Cash_Flow_Cr,Cash_and_Equivalents_Cr,Total_Debt_Cr,Shares_Outstanding_Cr,Beta,Revenue_Growth_5Y_%,ROIC_%
+TCS,Tata Consultancy Services,254479,26.5,45678,71529,7152,361.8,0.04,9.2,32.5
+INFY,Infosys,161281,21.8,28456,43201,4320,415.4,0.72,11.8,28.4
+HCLTECH,HCL Technologies,127411,19.2,19234,28765,3458,271.3,0.65,12.4,22.8
+WIPRO,Wipro,89446,16.4,12876,19876,1987,520.8,0.85,6.2,15.6
+LTIM,LTIMindtree,39363,18.7,6543,8765,1314,29.7,0.95,14.5,19.2
+TECHM,Tech Mahindra,53276,14.2,7234,9876,1576,97.9,1.05,7.8,12.4
